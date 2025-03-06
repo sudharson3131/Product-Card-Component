@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #F3EBE4;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+body p {
+    font-size: 14px;
+    font-family: "Montserrat", "Fraunces";
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    align-items: center;
+    max-width: 500px;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .content h1 {
+    font-family: "Fraunces";
+  }
+
+  .product__title P{
+    font-size: 8PX;
+    color: hsl(228, 12%, 48%)
+
+  }
+
+  .product__desc {
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    font-size: 14PX;
+  }
+
+  strong{
+    font-size: 25px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+  }
+
+.product__container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.kart__image{
+    width: 17px;
+    height: 16px;
+    padding: 5px;
+    
+}
+
+.btn{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+}
+
+/* MAKE RESPONSIVE */
+
+@media (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 15px;
+        width: 300px;
+    }
+    .product__container{
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+    }
+    .product-image{
+        content: url('./images/image-product-mobile.jpg');
+        width: 100%
+    }
+    .btn{
+       padding: 15px;
+       width: 250px;
+    }
+}
